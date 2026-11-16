@@ -1,0 +1,205 @@
+@import "tailwindcss";
+
+
+.main-container{
+
+    @apply bg-[#0C0942] pb-[10px]
+}
+
+
+/* ---------- top ------------- */
+
+.top{
+
+    @apply flex justify-between items-center p-[10px] bg-[#0C0942]
+}
+
+.top-middle{
+
+    @apply text-center
+
+}
+
+.top-right{
+
+    @apply flex gap-[20px] mr-[10px]
+}
+
+.profile-button{
+
+    @apply text-white ml-[10px] 
+}
+
+.title{
+
+@apply text-blue-200 text-[30px] font-[800]
+
+}
+
+.subtitle{
+
+    @apply text-blue-200 mb-[10px] leading-[2px] font-[500] 
+}
+
+.phone-logo{
+    
+    @apply text-white 
+}
+
+.cart-logo{
+
+    @apply text-white 
+}
+
+.h-cart-field {
+    @apply relative flex items-center;
+}
+
+.h-cart-number {
+    @apply absolute -top-[10px] -right-[10px]
+    rounded-full text-[10px] text-blue-900
+    bg-yellow-200 text-center
+    w-[17px] h-[17px]
+    flex justify-center items-center;
+}
+
+/* --------------  bottom search bar ------------ */
+
+.bottom{
+
+    @apply m-[5px] bg-white flex justify-between items-center rounded-[10px] h-[45px]
+}
+
+.search-bar{
+
+    @apply focus:outline-none ml-[10px] pl-[30px] w-[350px]
+    
+}
+
+.search-logo{
+
+    @apply text-blue-900 mr-[30px]
+}
+
+.desktop-container{
+
+    @apply hidden
+}
+
+/* ---------------------------------------------------
+-------------- desktop view -----------------------
+--------------------------------------------------- */
+
+@media (min-width:768px){
+
+    .main-container{
+
+        @apply hidden
+    }
+
+    .desktop-container{
+
+        @apply block
+    }
+
+    .desktop-header{
+
+        @apply flex justify-between items-center h-[100px]
+    }
+
+    /* ------ d-h-left -------- */
+    .d-h-left{
+
+        @apply flex flex-col items-center m-[15px]
+    }
+
+    .d-h-l-title{
+
+        @apply text-[45px] font-[700] text-blue-900 leading-[30px]
+    }
+
+    .d-h-l-subtitle{
+
+        @apply text-[25px] font-[600] text-blue-900 
+    }
+    
+    .d-h-l-owner{
+
+        @apply text-[12px] text-gray-400
+    }
+
+
+    /* --------- d-h-m ------------- */
+    .d-h-m{
+
+        @apply flex border p-[10px] w-[500px] justify-between border-gray-300 rounded-[10px] m-[20px]
+    }
+
+    .d-h-m-search{
+
+        @apply w-[400px] text-[18px] focus:outline-none
+    }
+
+    .d-h-m-search-logo{
+
+        @apply text-blue-900 cursor-pointer
+    }
+
+
+
+    /* ------------ d-h-r ----------------- */
+    .d-h-r{
+
+        @apply flex gap-[20px]
+    }
+
+    .d-h-r-l-l{
+
+        @apply flex items-center gap-[10px]
+    }
+
+    .d-h-r-l-r{
+
+        @apply flex flex-col items-start
+    }
+
+    .d-h-r-l-r-text{
+
+        @apply text-[12px] text-blue-900 font-[900]
+    }
+
+    .d-h-r-l-logo{
+
+        @apply text-blue-900 
+    }
+
+  .d-h-r-r {
+    @apply mr-[30px] flex items-center relative cursor-pointer;
+}
+
+.d-h-r-cart {
+    @apply text-blue-900 cursor-pointer;
+}
+
+.d-h-r-b-text {
+    @apply text-center text-[11px] bg-yellow-200
+    text-blue-900 absolute -top-[12px] -right-[12px]
+    rounded-full w-[19px] h-[19px]
+    flex justify-center items-center font-bold;
+}
+
+
+/* ---------------- nav-bar ---------------------- */
+
+.d-h-navbar{
+
+    @apply bg-[#230736] flex justify-center items-center gap-[30px] h-[45px] p-[5px]
+
+}
+
+.d-h-nav-text{
+
+    @apply text-white
+    hover:bg-yellow-200 hover:text-black hover:p-[5px] hover:rounded-[10px] cursor-pointer font-[600]
+}
+}

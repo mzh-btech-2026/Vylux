@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+
+.footer-main-container{
+
+    @apply flex p-[10px] justify-between items-center bg-gray-300 rounded-[20px] m-[10px]
+}
+
+.logo{
+
+    @apply flex flex-col justify-center items-center ml-[10px] mr-[10px]
+    
+}
+
+.icon{
+
+    @apply text-blue-900
+}
+
+.icon-text{
+
+    @apply text-[12px] font-[500]
+}
+
+.footer-desktop-container{
+
+    @apply hidden
+}
+
+
+ /* -----------------------------------------------
+        --------------- desktop view ------------------
+        -----------------------------------------------  */
+
+@media(min-width:768px){
+
+    .footer-main-container{
+
+        @apply hidden
+    }
+
+    .footer-desktop-container{
+
+        @apply block
+    }
+
+    /* --------- top footer-------- */
+
+    .d-f-top{
+
+        @apply flex gap-[50px] justify-evenly items-center p-[10px] bg-[#230736]
+
+    }
+
+    .d-f-t-card{
+
+        @apply flex gap-[10px] 
+    }
+
+    .d-f-t-logo{
+
+        @apply text-white
+    }
+
+     .d-f-t-text{
+
+        @apply text-white
+    }
+
+    .d-f-b{
+
+        @apply flex justify-center items-center bg-white
+    }
+
+    .d-f-b-text{
+
+        @apply text-[12px] p-[5px] text-gray-500
+    }
+
+
+}

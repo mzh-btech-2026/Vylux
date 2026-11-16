@@ -1,0 +1,40 @@
+
+@import "tailwindcss";
+
+/* MOBILE VIEW */
+
+.app-main-container {
+    @apply flex flex-col h-dvh overflow-hidden bg-gray-100;
+}
+
+.app-main-content {
+    @apply flex-1 overflow-y-auto;
+}
+
+.app-main-content::-webkit-scrollbar {
+    display: none;
+}
+
+/* DESKTOP VIEW */
+
+.desktop-view {
+    @apply hidden;
+}
+
+/* DESKTOP RESPONSIVE */
+
+@media (min-width: 768px) {
+
+    .app-main-container {
+        @apply hidden;
+    }
+
+    .desktop-view {
+        @apply flex flex-col min-h-dvh bg-gray-100 mx-auto w-full max-w-[1400px] px-[20px];
+    }
+
+    .desktop-main-content {
+        @apply flex-1;
+    }
+
+}
