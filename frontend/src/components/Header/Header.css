@@ -201,5 +201,6 @@
 
     @apply text-white
     hover:bg-yellow-200 hover:text-black hover:p-[5px] hover:rounded-[10px] cursor-pointer font-[600]
+    active:bg-green-300
 }
 }

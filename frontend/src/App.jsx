@@ -1,13 +1,16 @@
-
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import Home from "./pages/Home.jsx/Home";
-
 import {
   BrowserRouter as Router,
   Routes,
   Route
 } from "react-router-dom";
+
+import UserLayout from "./layout/User/UserLayout.jsx";
+import AdminLayout from "./layout/Admin/AdminLayout.jsx";
+import Banner from "./pages/Admin/Banner/Banner.jsx"
+
+import Home from "./pages/Home.jsx/Home";
+
+
 
 import "./App.css";
 
@@ -16,36 +19,23 @@ export default function App() {
   return (
     <Router>
 
-      {/* MOBILE VIEW */}
-      <div className="app-main-container">
+      <Routes>
 
-        <Header />
+        {/* USER ROUTES */}
 
-        <main className="app-main-content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
-        </main>
-
-        <Footer />
-
-      </div>
+        <Route element={<UserLayout />}>
+          <Route path="/" element={<Home />} />
+        </Route>
 
 
-      {/* DESKTOP VIEW */}
-      <div className="desktop-view">
+        {/* ADMIN ROUTES */}
 
-        <Header />
+        <Route path="/admin" element={<AdminLayout />}>
 
-        <main className="desktop-main-content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
-        </main>
+          <Route path="banner" element={<Banner />} />
+        </Route>
 
-        <Footer />
-
-      </div>
+      </Routes>
 
     </Router>
   );

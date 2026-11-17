@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* MAIN ADMIN LAYOUT */
+
+.admin-layout {
+    @apply flex min-h-dvh w-full bg-gray-100;
+}
+
+/* ADMIN CONTENT */
+
+.admin-content {
+    @apply flex-1 min-w-0 min-h-dvh p-5 overflow-y-auto;
+}
+
+/* MOBILE VIEW */
+
+@media (max-width: 767px) {
+
+    .admin-layout {
+        @apply flex flex-col;
+    }
+
+    .admin-content {
+        @apply w-full p-3;
+    }
+
+}
+
+/* DESKTOP VIEW */
+
+@media (min-width: 768px) {
+
+    .admin-layout {
+        @apply flex-row;
+    }
+
+    .admin-content {
+        @apply flex-1 p-5;
+    }
+
+}

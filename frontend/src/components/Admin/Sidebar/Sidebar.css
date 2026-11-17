@@ -1,0 +1,235 @@
+@import "tailwindcss";
+
+/* ---------- sidebar ------------- */
+
+.sidebar{
+
+    @apply bg-[#1F0E47] h-[90px] p-[20px] flex justify-between items-center
+}
+
+.s-menu-button{
+
+    @apply text-white
+}
+
+.s-m{
+
+    @apply flex flex-col items-center justify-center
+}
+
+.s-m-title{
+
+    @apply text-blue-100 font-[800] text-[20px]
+}
+
+.s-m-subtitle1{
+
+     @apply text-blue-100 font-[500] text-[15px]
+}
+
+.s-m-subtitle2{
+
+     @apply text-gray-400 font-[500] text-[15px]
+}
+
+.s-r{
+
+    @apply flex flex-col justify-center items-center
+}
+.s-r-logo{
+
+    @apply text-white
+}
+
+.s-r-text{
+
+    @apply text-blue-200 text-[15px] font-[300]
+}
+
+
+
+/* ------ ledt side bar--------------- */
+
+.l-sidebar{
+
+    @apply bg-[#1F0E47] w-[300px] p-[10px] absolute top-[1px] border border-blue-900 rounded-[10px] z-1000
+}
+
+.l-top{
+
+    @apply flex gap-[30px] bg-blue-200 p-[10px] rounded-[10px]
+}
+
+.l-t-l-logo{
+  @apply text-black
+
+}
+
+.l-t-r{
+
+    @apply flex flex-col justify-center items-center
+}
+
+.l-t-r-title{
+
+    @apply text-black font-[800] text-[20px]
+}
+
+.l-t-r-subtitle1{
+
+     @apply text-black font-[500] text-[15px]
+}
+
+.l-t-r-subtitle2{
+
+     @apply text-gray-400 font-[500] text-[15px]
+}
+
+/* ---------- leftside bar bottom ----------- */
+
+.l-bottom{
+
+    @apply mt-[20px]
+}
+
+.l-b-card{
+
+    @apply flex gap-[30px] items-center  p-[10px] mb-[20px]  cursor-pointer
+    hover:bg-[#210675] hover:text-black hover:rounded-[10px]
+}
+
+.l-b-icon{
+
+    @apply text-white
+}
+
+.l-b-icon-name{
+
+    @apply text-white
+}
+
+.admin-desktop-sidebar{
+
+    @apply hidden
+}
+
+/* ---------------------------------------------
+--------------desktop view ------------------
+--------------------------------------------- */
+
+@media(min-width:768px){
+
+
+
+    .admin-mobile-sidebar{
+
+        @apply hidden
+    }
+
+    .admin-desktop-sidebar{
+
+    @apply block w-[300px] bg-[#120738] h-[100vh]
+}
+
+/* ------------ top side bar -------- */
+
+   .d-a-s-top{
+
+    @apply bg-[#120738] flex flex-col justify-center items-center bg-[#130640]
+   }
+
+   .d-a-s-t-title{
+
+    @apply text-blue-200 text-[50px] font-[900] 
+   }
+
+     .d-a-s-t-subtitle1{
+
+    @apply text-white text-[20px] font-[600] mt-[-10px]
+   }
+
+     .d-a-s-t-subtitle2{
+
+    @apply text-gray-400 text-[20px] font-[700] pb-[50px]
+   }
+
+   /* -----------bottom sidebar ----------- */
+
+   
+.d-a-s-bottom{
+
+    @apply  bg-[#120738] pl-[20px]  pr-[10px]
+}
+
+.d-a-s-b-card{
+
+    @apply flex gap-[30px] items-center  p-[20px] mb-[10px]  cursor-pointer
+    hover:bg-[#210675] hover:text-black hover:rounded-[10px] hover:p-[20px]
+}
+
+.d-a-s-b-icon{
+
+    @apply text-white
+}
+
+.d-a-s-b-icon-name{
+
+    @apply text-white
+}
+
+/* ----------- login bottom bar --------- */
+
+/* PROFILE BOTTOM SECTION */
+
+.d-a-s-login {
+    @apply flex items-center gap-3
+    p-3 mx-3 mb-3
+    mt-[70px]
+    bg-gray-800
+    rounded-xl
+    border border-gray-700
+    cursor-pointer;
+}
+
+/* PROFILE ICON */
+
+.d-a-s-profile-icon {
+    @apply w-11 h-11
+    flex items-center justify-center
+    rounded-full
+    bg-blue-500
+    text-white
+    shrink-0;
+}
+
+/* PROFILE DETAILS */
+
+.d-a-s-profile-info {
+    @apply flex flex-col flex-1 min-w-0 gap-1;
+}
+
+.d-a-s-profile-name {
+    @apply text-sm font-semibold text-white;
+}
+
+/* DROPDOWN */
+
+.d-a-s-profile-select {
+    @apply w-full
+    bg-transparent
+    text-gray-400
+    text-xs
+    outline-none
+    cursor-pointer;
+}
+
+.d-a-s-profile-select option {
+    @apply bg-gray-800 text-white;
+}
+
+/* ARROW */
+
+.d-a-s-profile-arrow {
+    @apply text-gray-400 shrink-0;
+}
+}

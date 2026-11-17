@@ -1,0 +1,345 @@
+@import "tailwindcss";
+
+.admin-banner{
+
+    @apply relative
+}
+
+/* -------- banenr top ---------- */
+.a-b-top{
+
+    @apply flex justify-between items-center
+}
+
+.a-b-t-title{
+    @apply text-black text-[20px] font-[700]
+}
+
+.a-b-t-button{
+
+    @apply border border-green-500 rounded-[10px] p-[10px] bg-green-400
+    text-[10px] font-[500]
+    
+}
+
+/* -------------- bannner -botto m------------ */
+
+.a-b-bottom{
+
+    @apply mt-[30px] 
+}
+
+.a-b-card{
+
+    @apply border border-gray-300 rounded-[10px] p-[10px] flex gap-[30px] 
+    shadow-[0_2px_10px_rgba(0,0,0,0.12)]
+}
+
+.a-b-image{
+
+    @apply w-[180px] h-[160px] rounded-[10px]
+}
+
+.a-b-c-r-name{
+    @apply text-[30px] font-[700]
+}
+
+.a-b-c-r-r-card{
+
+    @apply flex gap-[25px] items-center mt-[30px]
+}
+
+
+.a-b-c-r-r-card-active-text{
+
+    @apply text-[12px] text-center font-[600] bg-green-500 p-[5px] rounded-[10px] w-[80px]
+}
+
+.a-b-c-r-r-card-inactive-text{
+
+    @apply text-[12px] text-center text-white font-[600] bg-red-500 p-[5px] rounded-[10px] w-[80px]
+}
+
+.a-b-c-r-r-card-edit-button{
+
+    @apply text-blue-600 cursor-pointer
+}
+
+.a-b-c-r-r-card-delete-button{
+
+    @apply text-red-600 cursor-pointer
+}
+
+
+.a-b-created-text{
+
+    @apply text-[11px] mt-[20px] text-gray-400
+}
+
+.a-b-updated-text{
+
+    @apply text-[11px] text-gray-400
+}
+
+/* ---------------- add button form filed ---------------- */
+
+
+.a-b-add-form{
+
+    @apply mt-[60px] p-[10px] rounded-[10px] border border-gray-300 
+      shadow-[0_3px_12px_rgba(31,14,71,0.12)]
+}
+
+.a-b-add-text{
+
+    @apply text-[20px] font-[600] text-center bg-green-400 p-[5px] rounded-[10px]
+}
+
+.a-b-add-banner{
+
+    @apply  p-[5px]
+}
+
+.a-b-add-banner-text{
+
+    @apply text-[20px] font-[600] mt-[20px]
+}
+
+
+
+.a-b-add-banner-field{
+
+    @apply bg-blue-400 rounded-[5px] p-[5px] mb-[5px] w-[200px] cursor-pointer
+}
+
+.a-b-image-display{
+
+    @apply border w-[400px] h-[200px] border-gray-300 rounded-[10px]
+
+}
+
+.a-b-add-banner-text-field{
+
+    @apply border border-gray-400 focus:outline-none pl-[10px] rounded-[10px]
+    h-[45px]
+    w-[350px]
+    mt-[10px]
+}
+
+.a-b-add-banner-status{
+
+    @apply flex gap-[20px]
+}
+
+.a-b-add-banner-status-text{
+
+    @apply text-[20px] font-[700]
+}
+
+.a-b-add-banner-status-check{
+
+    @apply w-[20px]
+}
+
+.a-b-save-button{
+
+    @apply bg-blue-900 text-[20px] text-white p-[10px] rounded-[10px]
+    w-[150px]
+    h-[60px]
+    mt-[20px] cursor-pointer
+}
+
+.a-b-cancel-button{
+
+    @apply bg-red-900 text-white p-[10px] rounded-[10px] ml-[20px]
+    w-[150px]
+    h-[60px] cursor-pointer
+}
+
+
+.desktop-admin-banner{
+
+    @apply hidden
+}
+
+
+
+
+
+
+
+
+
+
+@media(min-width:786px){
+
+    .admin-banner-mobile-view{
+
+        @apply hidden
+    }
+
+    .desktop-admin-banner{
+
+    @apply block
+}
+
+
+
+/* -------- desktop banenr top ---------- */
+
+
+.d-a-b-top{
+
+    @apply flex justify-between items-center
+}
+
+.d-a-b-t-title{
+    @apply text-black text-[25px] font-[700]
+}
+
+.d-a-b-t-button{
+
+    @apply border border-green-500 rounded-[10px] p-[10px] bg-green-400
+    text-[15px] font-[700] mr-[100px] cursor-pointer
+    hover:bg-blue-600
+    
+}
+
+/* ---------------- desktop add button form filed ---------------- */
+
+
+.d-a-b-add-form{
+
+    @apply mt-[60px] p-[10px] rounded-[10px] border border-gray-300 
+      shadow-[0_3px_12px_rgba(31,14,71,0.12)] w-[900px]
+      
+}
+
+.d-a-b-add-text{
+
+    @apply text-[20px] font-[600] text-center bg-green-400 p-[5px] rounded-[10px]
+}
+
+.d-a-b-add-banner{
+
+    @apply  p-[5px]
+}
+
+.d-a-b-add-banner-text{
+
+    @apply text-[20px] font-[600] mt-[20px]
+}
+
+.d-a-b-add-banner-field{
+
+    @apply bg-blue-400 rounded-[5px] p-[5px] mb-[5px] w-[200px] cursor-pointer
+}
+
+.d-a-b-image-display{
+
+    @apply border w-[600px] h-[250px] border-gray-300 rounded-[10px]
+
+}
+
+.d-a-b-add-banner-text-field{
+
+    @apply border border-gray-400 focus:outline-none pl-[10px] rounded-[10px]
+    h-[45px]
+    w-[750px]
+    mt-[10px]
+}
+
+.d-a-b-add-banner-status{
+
+    @apply flex gap-[20px]
+}
+
+.d-a-b-add-banner-status-text{
+
+    @apply text-[20px] font-[700]
+}
+
+.d-a-b-add-banner-status-check{
+
+    @apply w-[20px]
+}
+
+.d-a-b-save-button{
+
+    @apply bg-blue-900 text-[20px] text-white p-[10px] rounded-[10px]
+    w-[150px]
+    h-[60px]
+    mt-[20px] cursor-pointer
+}
+
+.d-a-b-cancel-button{
+
+    @apply bg-red-900 text-white p-[10px] rounded-[10px] ml-[20px]
+    w-[150px]
+    h-[60px] cursor-pointer
+}
+
+
+
+/* -------------- desktop bannner -botto m------------ */
+
+.d-a-b-bottom{
+
+    @apply mt-[30px] 
+}
+
+.d-a-b-card{
+
+    @apply border border-gray-300 rounded-[10px] p-[10px] flex gap-[100px] 
+    shadow-[0_2px_10px_rgba(0,0,0,0.12)] w-[900px] mr-[50px]
+}
+
+.d-a-b-image{
+
+    @apply w-[450px] h-[260px] rounded-[10px]
+}
+
+.d-a-b-c-r-name{
+    @apply text-[50px] font-[700]
+}
+
+.d-a-b-c-r-r-card{
+
+    @apply flex gap-[25px] items-center mt-[80px]
+}
+
+
+.d-a-b-c-r-r-card-active-text{
+
+    @apply text-[18px] text-center font-[600] bg-green-500 p-[5px] rounded-[10px] w-[90px]
+}
+
+.d-a-b-c-r-r-card-inactive-text{
+
+    @apply text-[12px] text-center text-white font-[600] bg-red-500 p-[5px] rounded-[10px] w-[80px]
+}
+
+.d-a-b-c-r-r-card-edit-button{
+
+    @apply text-blue-600 cursor-pointer
+}
+
+.d-a-b-c-r-r-card-delete-button{
+
+    @apply text-red-600 cursor-pointer
+}
+
+
+.d-a-b-created-text{
+
+    @apply text-[11px] mt-[20px] text-gray-400
+}
+
+.d-a-b-updated-text{
+
+    @apply text-[11px] text-gray-400
+}
+
+
+
+}
