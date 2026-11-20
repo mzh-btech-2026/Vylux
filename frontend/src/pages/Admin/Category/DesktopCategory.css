@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+/* ----------- desktop view ---------------- */
+
+
+/* ---------------- top -------------- */
+.d-a-c-top{
+
+    @apply flex justify-between leading-[10px]
+}
+
+.d-a-c-t-title{
+
+    @apply text-[35px] font-[900]
+}
+
+.d-a-c-t-button{
+
+    @apply bg-blue-900 rounded-[10px] text-white p-[10px] text-[12px]  mr-[100px]
+    cursor-pointer
+}
+
+/* ----------------- add bar ------------------ */
+
+.d-a-c-addbar{
+
+    @apply border p-[15px] border-gray-300 rounded-[10px] mt-[30px] shadow-xl
+    w-[700px]
+}
+
+.d-a-c-addbar-title{
+
+    @apply text-[25px] text-center font-[900] bg-green-400 rounded-[10px]
+    mb-[30px]
+}
+
+.d-a-c-addbar-card{
+
+    @apply mb-[30px]
+    pl-[20px]
+}
+
+.d-a-c-addbar-label{
+
+    @apply text-[25px] font-[700] mt-[5px]
+    mb-[5px]
+}
+
+.d-a-c-addbar-file{
+
+    @apply bg-green-300 rounded-[5px] p-[5px] w-[180px] text-[12px]
+}
+
+.d-a-c-addbar-file-image{
+
+    @apply h-[140px] w-[200px] rounded-[20px]
+}
+
+.d-a-c-addbar-image-preview{
+
+    @apply h-[150px] w-[200px] border mt-[10px] rounded-[10px] border-dotted
+}
+
+.d-a-c-addbar-input{
+
+    @apply border border-gray-300 rounded-[10px] h-[50px] w-[400px] pl-[10px]
+}
+
+.d-a-c-addbar-checkbox{
+
+    @apply w-[100px] h-[18px] cursor-pointer
+}
+
+.d-a-c-addbar-buttons{
+
+    @apply block flex justify-center  gap-[10px] mb-[10px]
+}
+
+.d-a-c-addbar-add-button{
+
+    @apply bg-green-600 w-[200px] h-[40px] rounded-[10px]
+    cursor-pointer
+}
+
+.d-a-c-addbar-cancel-button{
+
+    @apply bg-red-600 w-[200px] h-[40px] rounded-[10px] text-white 
+    cursor-pointer
+}
+
+/* ----------------- bottom card ---------------- */
+
+.d-a-c-bottom{
+
+    @apply mt-[30px] w-[700px]
+}
+
+
+.d-a-c-b-card{
+    @apply flex justify-between mt-[10px] gap-[20px] p-[10px] border border-gray-300 rounded-[20px]
+    shadow-[14px_2px_10px_rgba(0,0,0,0.2)]
+}
+
+.d-a-c-b-left{
+
+    @apply border h-[150px] w-[150px] rounded-[10px] border-gray-300
+}
+
+.d-a-c-b-left-image{
+
+    @apply border h-[150px] w-[150px] rounded-[10px] border-gray-300
+}
+
+.d-a-c-addbar-second{
+
+    @apply flex-1
+    
+}
+.d-a-c-b-second-title{
+
+    @apply text-[30px] font-[900] mt-[10px]
+}
+
+.d-a-c-b-second-slug{
+
+    @apply text-[15px] font-[500] text-gray-400 
+}
+
+.d-a-c-b-second-bottom{
+
+    @apply flex gap-[10px] mt-[40px]
+}
+
+.d-a-c-b-second-bottom-active{
+
+    @apply bg-green-400 text-[10px] w-[50px] p-[5px] rounded-[5px]
+}
+
+.d-a-c-b-second-bottom-inactive{
+
+    @apply bg-red-400 text-white w-[60px] 
+    flex justify-center items-center
+    text-[10px] p-[5px] rounded-[5px]
+}
+
+.d-a-c-b-second-bottom-popular{
+
+    @apply bg-blue-300 text-[10px] p-[5px] rounded-[5px]
+}
+
+.d-a-c-b-second-bottom-notpopular{
+
+    @apply bg-red-400 text-white 
+    flex justify-center items-center
+    text-[10px] p-[5px] rounded-[5px] w-[80px]
+}
+
+.d-a-c-b-date{
+
+    @apply text-[10px] text-gray-400 mt-[20px]
+}
+
+.d-a-c-b-update{
+
+    @apply text-[10px] text-gray-400
+}
+
+.d-a-c-b-third{
+    @apply flex flex-col justify-center items-center gap-[30px]
+
+
+}
+
+.d-a-c-b-third-edit{
+
+    @apply text-blue-600 p-[10px] rounded-[10px]
+    cursor-pointer
+}
+
+.d-a-c-b-third-trash{
+
+    @apply text-red-600  p-[10px] rounded-[10px]
+    cursor-pointer
+}
+
+
+
+
+
+
+
+
+
+
+
+

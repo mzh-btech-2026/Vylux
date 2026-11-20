@@ -5,6 +5,11 @@
     @apply relative
 }
 
+.admin-banner-mobile-view{
+
+    @apply mt-[100px]
+}
+
 /* -------- banenr top ---------- */
 .a-b-top{
 
@@ -32,7 +37,7 @@
 .a-b-card{
 
     @apply border border-gray-300 rounded-[10px] p-[10px] flex gap-[30px] 
-    shadow-[0_2px_10px_rgba(0,0,0,0.12)]
+    shadow-[0_2px_10px_rgba(0,0,0,0.12)] mb-[20px]
 }
 
 .a-b-image{
@@ -291,7 +296,7 @@
 .d-a-b-card{
 
     @apply border border-gray-300 rounded-[10px] p-[10px] flex gap-[100px] 
-    shadow-[0_2px_10px_rgba(0,0,0,0.12)] w-[900px] mr-[50px]
+    shadow-[0_2px_10px_rgba(0,0,0,0.12)] w-[900px] mr-[50px] mb-[10px]
 }
 
 .d-a-b-image{

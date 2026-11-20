@@ -13,6 +13,7 @@ import Home from "./pages/Home.jsx/Home";
 
 
 import "./App.css";
+import Category from "./pages/Admin/Category/Category.jsx";
 
 export default function App() {
 
@@ -33,6 +34,9 @@ export default function App() {
         <Route path="/admin" element={<AdminLayout />}>
 
           <Route path="banner" element={<Banner />} />
+          <Route path="category" element={<Category />} />
+
+
         </Route>
 
       </Routes>

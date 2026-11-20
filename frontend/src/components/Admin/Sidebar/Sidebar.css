@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+
+@media (max-width: 767px) {
+    .admin-mobile-sidebar .sidebar {
+        @apply fixed top-0 left-0 w-full z-[1000];
+    }
+
+    .admin-mobile-sidebar .l-sidebar {
+        @apply fixed top-[90px] left-0 h-[calc(100vh-90px)] overflow-y-auto z-[999];
+    }
+}
 /* ---------- sidebar ------------- */
 
 .sidebar{
@@ -128,7 +138,7 @@
 
     .admin-desktop-sidebar{
 
-    @apply block w-[300px] bg-[#120738] h-[100vh]
+    @apply block w-[300px] bg-[#120738] 
 }
 
 /* ------------ top side bar -------- */

@@ -1,6 +1,7 @@
 import { XCircle, Menu, UserCircle } from "lucide-react";
 import "./Sidebar.css"
 import { useState } from "react";
+import {Link} from "react-router-dom"
 
 import {
   LayoutDashboard,
@@ -77,18 +78,18 @@ export default function Sidebar(){
                 </div>
 
                 
-                <div className="l-b-card">
+                <Link to="/admin/banner" className="l-b-card" onClick={()=>setshowmenu(false)}>
                        
                        <Images className="l-b-icon"/>
                        <p className="l-b-icon-name">Banners</p>
-                </div>
+                </Link>
 
                 
-                <div className="l-b-card">
+                <Link to="/admin/category" onClick={()=>setshowmenu(false)} className="l-b-card">
                        
                        <Grid2X2 className="l-b-icon"/>
                        <p className="l-b-icon-name">Categories</p>
-                </div>
+                </Link>
 
                 
                 <div className="l-b-card">
@@ -169,17 +170,17 @@ export default function Sidebar(){
                        <p className="d-a-s-b-icon-name">Dashboard</p>
                 </div>
 
-                <div className="d-a-s-b-card">
+                <Link to="/admin/banner" onClick={()=>setshowmenu(false)} className="d-a-s-b-card">
                        
                        <Images className="d-a-s-b-icon"/>
                        <p className="d-a-s-b-icon-name">Banners</p>
-                </div>
+                </Link>
 
-                <div className="d-a-s-b-card">
+                <Link to="/admin/category" className="d-a-s-b-card" onClick={()=>setshowmenu(false)}>
                        
                        <Grid2X2 className="d-a-s-b-icon"/>
                        <p className="d-a-s-b-icon-name">Categories</p>
-                </div>
+                </Link>
 
                 <div className="d-a-s-b-card">
                        
